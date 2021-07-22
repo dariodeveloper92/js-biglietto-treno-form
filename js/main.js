@@ -16,6 +16,7 @@
 
 //Aggiungiamo una piccola animazione al click su "Crea" e "Annulla", se clicchiamo su annulla dobbiamo ripulire il form.
 
+//IL TUO BIGLIETTO
 var btnGenera = document.getElementById('calcolaPrezzo');
 console.log(btnGenera);
 
@@ -50,13 +51,20 @@ btnGenera.addEventListener('click',
 
         //PREZZO BIGLIETTO
         document.getElementById("prezzo").innerHTML = prezzo.toFixed(2) + '€';
+        
         //NOME PASSEGGERO
         document.getElementById("passeggero").innerHTML = nome;
         
+        //OFFERTA
+        document.getElementById("offerta").innerHTML = 'Biglietto Standard';
+        
+        //CARROZZA
+        var numeroRandom = Math.floor(Math.random() * 15)+ 1;
+        document.getElementById("carrozza").innerHTML = numeroRandom;
+
         //CODICE TRENO
         var numeroRandom = Math.floor(Math.random() * 100000)+ 90001;
         document.getElementById("codiceTreno").innerHTML = numeroRandom;
-        //Stampa a video del nostro biglietto
     }
 )
 
@@ -71,8 +79,6 @@ btnAnnulla.addEventListener('click',
         document.getElementById('nome').value = '';
         document.getElementById('km').value = '';
         document.getElementById('fascia-eta').value = '';
-
     }
 )
 
-//IL TUO BIGLIETTO
