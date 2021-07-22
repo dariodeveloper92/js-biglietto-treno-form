@@ -21,24 +21,31 @@
         <div id="calcola_prezzo">
             <!-- container_dati -->
             <div class="container_dati">
-                <!-- input nome e cognome -->
-                <label for="nome">Nome Cognome</label>
-                <input class="little_box" id="nome" type="text" name="nome" placeholder="Inserisci il tuo nome">
-                <!-- fine input nome e cognome -->
+                <!-- input -->
+                <div class="dati_input">
+                    <!-- input nome e cognome -->
+                    <label for="nome">Nome Cognome</label>
+                    <!-- input numero km -->
+                    <label for="km">Km da percorrere</label>
+                    <!-- select numero età -->
+                    <label for="fascia-eta">Fascia d'età</label>
+                </div>
+                <!-- fine input -->
 
-                <!-- input numero km -->
-                <label for="km">Km da percorrere</label>
-                <input class="little_box" id="km" type="text" name="km" placeholder="Inserisci i km">
-                <!-- fine input numero km -->
-
-                <!-- select numero età -->
-                <label for="fascia-eta">Fascia d'età</label>
-                <select class="little_box" name="fascia-eta" id="fascia-eta">
-                    <option value="17">Minorenne</option>
-                    <option value="19">Maggiorenne</option>
-                    <option value="66">Over 65</option>
-                </select>
-                <!-- fine select numero età -->
+                <!-- little box -->
+                <div class="box_dati">
+                    <!-- box nome e cognome -->
+                    <input class="little_box" id="nome" type="text" name="nome" placeholder="Inserisci il tuo nome">
+                    <!-- box numero km -->
+                    <input class="little_box_km" id="km" type="text" name="km" placeholder="Inserisci i km">
+                    <!-- box numero età -->
+                    <select class="little_box" name="fascia-eta" id="fascia-eta">
+                        <option value="17">Minorenne</option>
+                        <option value="19">Maggiorenne</option>
+                        <option value="66">Over 65</option>
+                    </select>
+                </div>
+                <!-- fine little box -->
                 <br>
                 <!-- container_btn -->
                 <div class="container_btn">

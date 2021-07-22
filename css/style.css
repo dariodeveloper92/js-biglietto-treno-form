@@ -28,6 +28,24 @@ main {
     width: 80%;
     height: 200px;
     border-radius: 10px;
+    text-align: center;
+}
+
+.dati_input,
+.box_dati {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.little_box,
+.little_box_km {
+    text-align: center;
+}
+
+.little_box_km {
+    background-color: red;
+    color: white;
 }
 
 .container_btn {
