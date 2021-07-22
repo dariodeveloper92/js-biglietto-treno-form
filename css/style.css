@@ -40,3 +40,18 @@ main {
     width: 80%;
     height: 200px; 
 }
+
+.gray {
+    background-color: gray;
+}
+
+.red {
+    color: red;
+}
+
+.little_box {
+    border-radius: 10px;
+    border: 2px solid red;
+    width: 200px;
+    height: 40px;
+}
