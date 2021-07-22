@@ -10,7 +10,59 @@
     <title>Biglietto treno - JS</title>
 </head>
 <body>
-    
+    <!-- header -->
+    <header>
+        <h1 class="title">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    </header>
+    <!-- fine header -->
+    <br>
+    <!-- main -->
+    <main>
+        <div id="calcola_prezzo">
+            <!-- container_dati -->
+            <div class="container_dati">
+                <!-- input nome e cognome -->
+                <label for="nome">Nome e Cognome</label>
+                <input id="nome" type="text" name="nome" placeholder="Inserisci il tuo nome">
+                <!-- fine input nome e cognome -->
+
+                <!-- input numero km -->
+                <label for="km">Km da percorrere</label>
+                <input id="km" type="text" name="km" placeholder="Inserisci i km">
+                <!-- fine input numero km -->
+
+                <!-- select numero età -->
+                <label for="fascia-eta">Fascia d'et&grave;</label>
+                <select name="fascia-eta" id="fascia">
+                    <option value="minorenne">Minorenne</option>
+                    <option value="maggiorenne">Maggiorenne</option>
+                    <option value="over65">Over 65</option>
+                </select>
+                <!-- fine select numero età -->
+
+                <!-- container_btn -->
+                <div class="container_btn">
+                    <button id="calcolaPrezzo" name="calacolaPrezzo">Genera</button>
+                    <button id="annulla" name="annulla">Annulla</button>
+                </div>
+                <!-- fine container_btn -->
+            </div>
+            <!-- fine container_dati -->
+        </div>
+        <br>
+        <!-- container_box -->
+        <h1 class="title">IL TUO BIGLIETTO</h1>
+        <div id="container_box">
+            <div class="biglietto_box">
+                <div id="biglietto" class="box">
+                    Esempio di box che compare
+                </div>
+            </div>
+        </div>
+        <!-- fine container_box -->
+    </main>
+    <!-- fine main -->
+    <br>
     <!-- js -->
     <script src="js/main.js"></script>
     <!-- fine js -->
