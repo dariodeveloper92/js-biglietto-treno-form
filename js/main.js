@@ -48,9 +48,14 @@ btnGenera.addEventListener('click',
             prezzo = prezzo * 0.6;
         }
 
-       
-        document.getElementById("prezzo").innerHTML = prezzo.toFixed(2);
+        //PREZZO BIGLIETTO
+        document.getElementById("prezzo").innerHTML = prezzo.toFixed(2) + '€';
+        //NOME PASSEGGERO
+        document.getElementById("passeggero").innerHTML = nome;
         
+        //CODICE TRENO
+        var numeroRandom = Math.floor(Math.random() * 100000)+ 90001;
+        document.getElementById("codiceTreno").innerHTML = numeroRandom;
         //Stampa a video del nostro biglietto
     }
 )
@@ -59,8 +64,8 @@ var btnAnnulla = document.getElementById('annulla');
 
 btnAnnulla.addEventListener('click',
     function() {
-        var biglietto = document.getElementById('biglietto');
-        biglietto.style.display = 'none';
+        var biglietto_box = document.getElementById('biglietto');
+        biglietto_box.style.display = 'none';
 
         //Svuoto gli input
         document.getElementById('nome').value = '';

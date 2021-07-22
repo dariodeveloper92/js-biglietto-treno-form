@@ -39,9 +39,10 @@ main {
 #container_box {
     display: flex;
     justify-content: center;
+    /* display: none; */
 }
  
-.biglietto_box  {
+#biglietto_box  {
     background-color: white;
     width: 80%;
     height: 100px; 
