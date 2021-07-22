@@ -32,18 +32,18 @@
                 <!-- fine input numero km -->
 
                 <!-- select numero età -->
-                <label for="fascia-eta">Fascia d'et&grave;</label>
+                <label for="fascia-eta">Fascia d'età</label>
                 <select class="little_box" name="fascia-eta" id="fascia">
                     <option value="minorenne">Minorenne</option>
                     <option value="maggiorenne">Maggiorenne</option>
                     <option value="over65">Over 65</option>
                 </select>
                 <!-- fine select numero età -->
-
+                <br>
                 <!-- container_btn -->
                 <div class="container_btn">
-                    <button id="calcolaPrezzo" name="calacolaPrezzo" class="red">Genera</button>
-                    <button id="annulla" name="annulla" class="red">Annulla</button>
+                    <button id="calcolaPrezzo" name="calacolaPrezzo" class="red" onclick="myFunction()">Genera</button>
+                    <button id="annulla" name="annulla" class="red" onclick="myFunction()">Annulla</button>
                 </div>
                 <!-- fine container_btn -->
             </div>
@@ -78,7 +78,7 @@
                                 <td> Biglietto Standard</td>
                                 <td> 2</td>
                                 <td> 90001</td>
-                                <td> 0.00€</td>
+                                <td id="prezzo"> </td>
                             </tr>
                         </tbody>
                         <hr>
