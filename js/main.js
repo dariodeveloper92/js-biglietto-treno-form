@@ -22,37 +22,35 @@ console.log(btnGenera);
 btnGenera.addEventListener('click',
     function() {
         var nome = document.getElementById('nome').value;
-        //alert('nome');
         var km = document.getElementById('km').value;
         var fasciaEta = document.getElementById('fascia-eta').value;
          
 
-        var biglietto = document.getElementById('biglietto').value;
+        var biglietto = document.getElementById('biglietto');
+        console.log(biglietto);
         biglietto.style.display = "block";
 
+
         // Calcola il prezzo del biglietto
-       var prezzo = chilometri * 0.21;
+       var prezzo = km * 0.21;
 
-        console.log(chilometri * 0.21);
+        console.log(km * 0.21);
 
-        var minorenne = eta < 18;
-        var maturo = eta > 65;
+        var minorenne = fasciaEta < 18;
+        var maturo = fasciaEta > 65;
 
-        if (eta < 18)
+        if (fasciaEta < 18)
         {
             prezzo = prezzo * 0.8;
         }
-        else if (eta > 65)
+        else if (fasciaEta > 65)
         {
             prezzo = prezzo * 0.6;
         }
 
-        function myFunction() 
-        {
-            var num = prezzo;
-            var n = num.toFixed(2);
-            document.getElementById("prezzo").innerHTML = n;
-        }
+       
+        document.getElementById("prezzo").innerHTML = prezzo.toFixed(2);
+        
         //Stampa a video del nostro biglietto
     }
 )
