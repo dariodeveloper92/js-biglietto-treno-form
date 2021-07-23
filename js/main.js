@@ -73,7 +73,7 @@ var btnAnnulla = document.getElementById('annulla');
 btnAnnulla.addEventListener('click',
     function() {
         var biglietto_box = document.getElementById('biglietto');
-        biglietto_box.style.display = 'none';
+        container_box.style.display = 'none';
 
         //Svuoto gli input
         document.getElementById('nome').value = '';
