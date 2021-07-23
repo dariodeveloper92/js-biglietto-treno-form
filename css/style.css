@@ -27,11 +27,16 @@ body {
     text-align: center;
 }
 
+.burgundy {
+    color: #800020;
+}
+
 .dati_input,
 .box_dati {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 15px 0;
 }
 
 .little_box,
@@ -92,6 +97,7 @@ body {
 .dettaglio {
     display: flex;
     justify-content: start;
+    margin: 5px 0;;
 }
 
 .table {
