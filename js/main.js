@@ -1,20 +1,10 @@
 //Esercizio: Creiamo un finto biglietto del treno con:
-//Nome passeggero
-
-
-//Codice treno (numero casuale tra 90000 e 100000 escluso)
-
-
-//Numero carrozza
-
-
-//Prezzo calcolato
-
-
-//Categoria selezionata dall'utente
-
-
-//Aggiungiamo una piccola animazione al click su "Crea" e "Annulla", se clicchiamo su annulla dobbiamo ripulire il form.
+//1) Nome passeggero
+//2) Codice treno (numero casuale tra 90000 e 100000 escluso)
+//3) Numero carrozza
+//4) Prezzo calcolato
+//5) Categoria selezionata dall'utente
+//6) Aggiungiamo una piccola animazione al click su "Crea" e "Annulla", se clicchiamo su annulla dobbiamo ripulire il form.
 
 //IL TUO BIGLIETTO
 var btnGenera = document.getElementById('calcolaPrezzo');

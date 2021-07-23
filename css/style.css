@@ -14,10 +14,6 @@ body {
     text-align: center;
 }
 
-main {
-    
-}
-
 #calcola_prezzo {
     display: flex;
     justify-content: center;
